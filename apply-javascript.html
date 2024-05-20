@@ -3865,6 +3865,20 @@ data-styled.g87[id="ButtonGroup-sc-1gxhls1-0"]{content:"cjbBGq,"}/*!sc*/
 
     <div id="js-global-screen-reader-notice" class="sr-only" aria-live="polite" aria-atomic="true" ></div>
     <div id="js-global-screen-reader-notice-assertive" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+    <script>
+  // O JavaScript fica aqui
+      function criarParagrafo() {
+  let para = document.createElement("p");
+  para.textContent = "Você clicou no botão!";
+  document.body.appendChild(para);
+}
+
+const botoes = document.querySelectorAll("button");
+
+for (var i = 0; i < botoes.length; i++) {
+  botoes[i].addEventListener("click", criarParagrafo);
+}
+</script>
   </body>
 </html>
 
